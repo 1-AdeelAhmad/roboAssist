@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Button, Typography, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -10,11 +10,13 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
       flexGrow: 1,
+      fontSize:' 1.25rem',
     },
     subtitle: {
         marginTop: '1rem',
         marginBottom: '1rem',
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        fontSize:'.6rem'
     }
   }));
 
@@ -29,7 +31,7 @@ const Title = () => {
                     <Typography variant="h5" className={classes.title}>
                         Emoti Video
                     </Typography>
-                    <Button color="inherit">Name</Button>
+                    {/* <Button color="inherit">Name</Button> */}
                 </Toolbar>
             </AppBar>
             <Typography className={classes.subtitle} align='center' display='block' variant='button' >An App That Detects Facial Emotions In Real-Time</Typography>

@@ -3,10 +3,12 @@ import { Paper, Typography } from '@material-ui/core';
 
 const CurrentEmotion = ({emotion}) => {
     return(
-        <div style={{width: '75%', margin: '0 auto', paddingTop: '1rem', paddingBottom: '2rem'}}>
+        <div style={{margin: '0 auto', marginTop: '1rem', width:'80vw'}}>
             <Paper elevation={3} style={{padding: '1rem'}}>
-                <Typography align='center' variant='subtitle1'>Current Emotion:</Typography>
-                <Typography align='center' variant='h6'>{emotion}</Typography>
+                <Typography style={{marginBottom: '.5rem'}} align='center' variant='body2'>CURRENT EXPRESSION:</Typography>
+                <Typography align='center' variant='subtitle2'>
+                    {emotion? emotion.toUpperCase() : 'LOADING...'}
+                </Typography>
             </Paper>
         </div>
     )

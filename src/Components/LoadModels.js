@@ -11,7 +11,7 @@ export async function loadModels () {
     // console.log('load Models -->', faceapi.nets)
 }
 
-export async function getFullFaceDescription(blob, inputSize = 512) {
+export async function getFullFaceDescription(blob, inputSize) {
     // tiny_face_detector options
     let scoreThreshold = 0.5;
     const OPTION = new faceapi.TinyFaceDetectorOptions({
@@ -25,6 +25,7 @@ export async function getFullFaceDescription(blob, inputSize = 512) {
   
     // detect all faces and generate full description from image
     // including landmark and descriptor of each face
+
     let fullDesc = await faceapi
       .detectAllFaces(img, OPTION)
       .withFaceLandmarks(useTinyModel)

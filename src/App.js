@@ -1,20 +1,33 @@
 import React from 'react';
 import './App.css';
-import { Container, Paper } from '@material-ui/core';
-import CameraFeed from './Components/CameraFeed';
+import { Container, Paper, Grid, Button } from '@material-ui/core';
+import VideoFeed from './Components/VideoFeed';
+// import CameraFeed from './Components/CameraFeed';
 import Title from './Components/Title';
 import CurrentEmotion from './Components/CurrentEmotion';
+
 
 class App extends React.Component{
     constructor(){
         super()
         this.state =  {
-            emotion: ''
+            emotion: '',
+            age: '',
+            gender: '',
+            showLandmarks: false
         }
     }
 
     getCurrentEmotion = (emotion) => {
         this.setState({emotion})
+    }
+
+
+    showLandmarks = (e) => {
+        e.preventDefault()
+        this.setState({
+            showLandmarks: !this.state.showLandmarks
+        })
     }
 
     render(){
@@ -24,10 +37,26 @@ class App extends React.Component{
                 <Paper elevation={3} style={{borderRadius: '20px'}}>
                     <Title/>
                     <hr style={{width: '60%'}}/>
-                    <CameraFeed getCurrentEmotion={this.getCurrentEmotion} />
-                    
+                    {/* <CameraFeed getCurrentEmotion={this.getCurrentEmotion} /> */}
+                    <VideoFeed 
+                        getCurrentEmotion={this.getCurrentEmotion}
+                        getCurrentAge={this.getCurrentAge}
+                        getCurrentGender={this.getCurrentGender}
+                        showLandmarks={this.state.showLandmarks}
+                    />
                     <hr style={{width: '60%'}}/>
-                    <CurrentEmotion emotion={this.state.emotion}/>
+                    <Grid container spacing={3} justify='center'>
+                        <Grid item xs={12}>
+                            <CurrentEmotion emotion={this.state.emotion}/>
+                        </Grid>
+                        
+                        <Grid item sm={12}>
+                            <Paper style={{padding: '.25rem'}}>
+                                <Button onClick={this.showLandmarks}>{this.state.showLandmarks? 'Click To Hide Landmarks' : 'Click To Show Landmarks'}</Button>
+                            </Paper>    
+                        </Grid>
+                    </Grid>
+                    
                 </Paper>
             </Container>
 
