@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Container, Paper } from '@material-ui/core';
+import CameraFeed from './Components/CameraFeed';
+import Title from './Components/Title';
+import CurrentEmotion from './Components/CurrentEmotion';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state =  {
+            emotion: ''
+        }
+    }
+
+    getCurrentEmotion = (emotion) => {
+        this.setState({emotion})
+    }
+
+    render(){
+        return(
+            
+            <Container maxWidth='sm' style={{marginTop: '2rem', marginBottom: '2rem'}}>
+                <Paper elevation={3} style={{borderRadius: '20px'}}>
+                    <Title/>
+                    <hr style={{width: '60%'}}/>
+                    <CameraFeed getCurrentEmotion={this.getCurrentEmotion} />
+                    
+                    <hr style={{width: '60%'}}/>
+                    <CurrentEmotion emotion={this.state.emotion}/>
+                </Paper>
+            </Container>
+
+        )
+    }
 }
 
 export default App;
