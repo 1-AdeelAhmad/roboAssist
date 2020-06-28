@@ -7,8 +7,8 @@ const Styles = (theme => ({
     root: {
       flexGrow: 1,
       margin: '0 auto',
-      width: '90vw',
-      height: '90vw',
+      width: '90%',
+      height: '90%',
       marginTop: '1rem',
       marginBottom: '1rem',
       borderRadius: '20px'

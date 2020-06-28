@@ -51,8 +51,8 @@ class App extends React.Component{
                         </Grid>
                         
                         <Grid item sm={12}>
-                            <Paper style={{padding: '.25rem'}}>
-                                <Button onClick={this.showLandmarks}>{this.state.showLandmarks? 'Click To Hide Landmarks' : 'Click To Show Landmarks'}</Button>
+                            <Paper style={{padding: '.25rem', width: '80%', margin: '0 auto'}}>
+                                <Button style={{textAlign: 'center'}} onClick={this.showLandmarks}>{this.state.showLandmarks? 'Click To Hide Landmarks' : 'Click To Show Landmarks'}</Button>
                             </Paper>    
                         </Grid>
                     </Grid>
