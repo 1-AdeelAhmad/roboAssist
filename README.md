@@ -1,5 +1,5 @@
-View it here https://adeel3786.github.io/emotivideo
+View it here https://adeel3786.github.io/roboAssist
 
-## Emoti Video
+## Robo Assist
 
-A small running protoype of an app that determines facial expressions via the devices' camera in real time. Its possibilites are endless....
+A small running protoype of an app that determines responses based on your expression
