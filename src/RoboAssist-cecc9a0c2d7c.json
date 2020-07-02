@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "roboassist",
+  "private_key_id": "cecc9a0c2d7c00b81a99eefbdcb5cef92e2aba26",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCpTM4jo6tMeCio\nOEOyVMmU3pA1nymuHHLeE9E9BrVGw0m2UButgOn+7/DJajUzbdbo0V2K168byPwe\nsMkesbV/uMUPMvdHCfathIuCEvULGlXXccG9muX27b7SIBKaH1EJkKmp1PprNkwS\n9WiM9Rja+czQYb6sRhllQnfEAmFzPQfVzKES0332Q5FU4jn0QnynkvQv6M6uYcfA\nFi3ybf2AQFawig6fj3AhV1X+6I1bQviZas0MjaaigcZoedPK5ejvh9MhdcqEU9LW\nBrkJvtsHT2ki3J+9R1qRXRtSfiMWHVAMLTqqWA0cz1LXfUzvS1tWhQwUTurW03Ek\ns9jyAjRjAgMBAAECggEAF3q4aAbt3dgYQ2QyN0w8/LF1LIqbXDND1vrGnQEOKPcy\nhN9NR13Glf2u1jAtmqlUEcvffj71YRQZqyP3cJNSyZjVc4ss8iQ2ms/0DSEV7OlF\nGHEFXodZ90n3meqqyccoFPyEGzKXXEEWgdaZHltrjAry1b+IkxnRsdJrC7sMys9l\nRLOIwIuT01JtkK5EwS/aueCWu3yLrldOJVIDM+hxwongr8PFHS9KmwivjMK223Ip\nNigdaC3tglCSDhllR0TEVZFRmz+UryuuB4NQTpHSpFvuupaWgIsfeNZOq+cZkN17\nqEsBaQUk/fthg4NncrHAkQpPxQVicwjOl+2FD75usQKBgQDRoIulBv8J09NHVZ8c\nADEsWCmrryOAr/0PYfDWAXNbCHRPwS114PMxwSOkuhAM7+R/oqli5mGx4p7scHbN\nOIP9xk9GxJnsZSCpxMAjy2LXaZ41hQ4JX8WAIVvF1MVLccW7dPWjzKYIicst75fT\n+oAJTUTmVdk3wsEA/5/gqExjewKBgQDOwHvIPzH7ckgn4pgNmrVMUXVgnGTGfZ6H\n9gpKHTWfmHOUbCbqdIXF7d5G5uB0h2TDXomojnXts4ThKRBsCO56SnAzASU2rrkc\npBEZ2h0AQlV9rZlhIMOQXL718kdu5Nc2sRxyG9eI1n3AKMr/Y62DeSEHim7Xip15\nuo0j0zPKOQKBgQCM9MtxuHaeARW8jdJjXa2zB8VdcHMLAUvEoDL1dBxBRjoPtvH+\npbhh6GEzTvmj+VtIh/QmUIu4tY3vpt/7ttjqOALurxxhXM7N2ULpzsUz3A1KJ6H8\no62GLugq6puP030GQ+s4rU+nxiAdT1Jkc7jMiGygBXH+kLJ/HWRACGr1KQKBgQDF\ntd3pFT2n1ZZYxeBgChTbQX58f7IC+jeyjr8yNpKD5taIFZB1Xi5ao2iO5tO3u43J\nIkuDq4/sWmJ0qr8wgK4EtdBrhenfS+BrGh3cWe6nw8dbIrps3lcFYxuduC1FR4Li\noyWvnR5UlcC1FI1jAh/4fMnwGxp59e03bgTwQFTjSQKBgQCLxEtLykWy1FP3FNNq\nQkQxmNE/J6Nwtz0FWHqFD76aBCc124dZj7hF57W5XBcPZeM3Px9FiiGpG7ydnDOh\nfDzWIbaobTAqEeZLvf4Ylt+OSz423jUrIxq2mC2xy1lLJ4EM8H0ZclseYWAfpgCx\nYOQSyIKQQEySKPpxJRmeZAQ/0Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "adeel-630@roboassist.iam.gserviceaccount.com",
+  "client_id": "108500497152399953224",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adeel-630%40roboassist.iam.gserviceaccount.com"
+}

@@ -7,7 +7,6 @@ export async function loadModels () {
     await faceapi.loadTinyFaceDetectorModel(MODEL_URL);
     await faceapi.loadFaceRecognitionModel(MODEL_URL);
     await faceapi.loadFaceExpressionModel(MODEL_URL);
-    await faceapi.loadAgeGenderModel(MODEL_URL);
     // console.log('load Models -->', faceapi.nets)
 }
 
@@ -31,6 +30,5 @@ export async function getFullFaceDescription(blob, inputSize) {
       .withFaceLandmarks(useTinyModel)
       .withFaceDescriptors()
       .withFaceExpressions()
-      .withAgeAndGender;
     return fullDesc;
   }

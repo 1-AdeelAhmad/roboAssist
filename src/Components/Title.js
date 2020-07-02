@@ -29,7 +29,7 @@ const Title = () => {
             <AppBar position="static" color='primary' style={{borderTopRightRadius: '20px',borderTopLeftRadius: '20px' }}>
                 <Toolbar>
                     <Typography variant="h5" className={classes.title}>
-                        Emoti Video
+                        RoboAssist
                     </Typography>
                     {/* <Button color="inherit">Name</Button> */}
                 </Toolbar>
