@@ -16,7 +16,7 @@
     "googleapis": "^52.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-speech-kit": "^3.0.0",
     "react-webcam": "^5.1.0"
   },
